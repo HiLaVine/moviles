@@ -1,0 +1,240 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Ocupa toda la altura de la ventana */
+}
+
+body {
+    background: #FFFFFF;
+    color: #594846;
+    font-family: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+    margin: 0;
+}
+
+a, a:visited {
+    color: #42628F;
+}
+
+p {
+    margin: 0.5em 0.25em;
+}
+
+h1 {
+    font-size: 1.75em;
+    border: solid #D4D6D7;
+    border-width: 2px 0;
+    padding: 0.25em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+h2 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+dl {
+    margin: 0 0.5em;
+}
+
+dt {
+    font-weight: bold;
+    margin: 0.5em 1em 0.5em 0;
+    border-bottom: 1px dashed #EF4023;
+}
+
+.intro {
+    font-size: 1.15em;
+    line-height: 1.3em;
+    text-align: justify;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+.navigation {
+    background-color: #EF4023;
+    border-bottom: 2px solid #B5B5B5;
+    clear: both;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navigation li a {
+    color: #ffffff;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.header {
+    background: url(images/img1.png) no-repeat center center; /* Centrar la imagen */
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    min-height: 200px; /* Altura mínima para que siempre sea visible */
+    height: auto; /* Ajuste automático de altura */
+    text-align: center;
+    width: 100%; /* Ajustar el ancho al 100% */
+}
+
+.footer {
+    background-color: #EF4023;
+    color: #ffffff;
+    text-align: center;
+    padding: .5em 0;
+    font-style: italic;
+    width: 100%; /* Ajustar el ancho al 100% */
+    box-sizing: border-box; /* Incluir el padding dentro del ancho */
+    clear: both; /* Limpiar los elementos flotantes */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	float: right; 
+}
+
+/* Desktop layout - Default for more than 960px */
+body, .header, .navigation, .footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+#visit, #points, #main {
+    width: 300px;
+}
+
+#points ul {
+    list-style-image: url('images/point.png');
+    margin: 0.5em 0 1em 0.5em;
+    padding-left: 1em;
+}
+
+#points ul li {
+    margin: 0.5em 1em;
+}
+
+/* Three-column layout for screens wider than 960px */
+@media only screen and (min-width: 961px) {
+    #visit, #points, #main {
+        width: 300px;
+        float: left;
+    }
+
+    #main {
+        margin: 10px 0 0 0;
+    }
+
+    .column {
+        margin: 10px;
+    }
+}
+
+/* Tablet layout - 760px to 960px with two columns */
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+    body, .header, .navigation, .footer {
+        width: 100%;
+    }
+
+    #visit, #points {
+        width: 45%;
+        float: left;
+        margin: 10px 2.5%;
+    }
+
+    #main {
+        width: 90%;
+        margin: 10px 5%;
+        float: none;
+    }
+
+    .column {
+        margin: 10px;
+    }
+
+    .navigation ul li {
+        width: auto;
+    }
+
+    .navigation ul {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .header {
+        background-size: cover; /* Asegurarse de que la imagen cubra el contenedor */
+    }
+}
+
+/* Mobile layout - 480px to 760px with one column */
+@media screen and (max-width: 760px) {
+    body, .header, .navigation, .footer {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    #main, #visit, #points {
+        width: 90%;
+        margin: 10px auto;
+        float: none;
+    }
+
+    .navigation ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navigation ul {
+        padding-left: 0;
+    }
+
+    .navigation ul li a {
+        padding: 10px 15px;
+    }
+
+    .header {
+        min-height: 150px; /* Altura mínima reducida para dispositivos móviles */
+        height: auto; /* Ajuste automático de altura */
+        text-align: center;
+        background-size: cover; /* Asegurarse de que la imagen cubra el contenedor */
+    }
+}
+
+/* Extra small devices - less than 480px */
+@media screen and (max-width: 480px) {
+    .header {
+        min-height: 100px; /* Altura mínima para pantallas muy pequeñas */
+        height: auto; /* Ajuste automático de altura */
+        background-size: cover; /* Asegurarse de que la imagen cubra el contenedor */
+    }
+}
