@@ -1,6 +1,16 @@
+/*Farrera Mendez Emmanuel Sinai
+* Practica 02 arreglos en kotlin
+*
+* Declarar 2 arreglos con 5 cadenas cada uno
+* Convertir las cadenas del primer arreglo a mayúsculas e imprimirlas
+* Convertir a minúsculas las cadenas del segundo arreglo e imprimirlas
+* Indicar si alguna cadena del arreglo2 esta contenida en el arreglo1 o viceversa
+* De las cadenas de ambos arreglos indicar el número de vocales que hay en cada una de las cadenas almacenadas, es decir el número de a, e i o y u desplegadas por separado
+* */
+
 fun main() {
-    val arr1 = arrayOf("Hola", "Mundo", "Kotlin", "Array", "Example")
-    val arr2 = arrayOf("test", "platano", "megatron", "array", "hola")
+    val arr1 = arrayOf("megatron", "prime", "banana", "minuscula", "mayuscula")
+    val arr2 = arrayOf("test", "platano", "megatron", "prime", "hola")
 
     // Convertir a mayúsculas e imprimir arr1
     val upperCaseArr1 = arr1.map { it.uppercase() }
