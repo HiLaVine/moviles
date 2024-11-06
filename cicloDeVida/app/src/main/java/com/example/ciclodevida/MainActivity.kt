@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.util.Log
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     private val logEtiqueta = "MainActivity"
@@ -24,23 +25,29 @@ class MainActivity : AppCompatActivity() {
         }
         val text1: TextView = findViewById(R.id.txt_1)
         text1.setText("Adios a todos")
-        Toast.makeText(this, "En el onCreate", Toast.LENGTH_SHORT).show()
         Log.e(logEtiqueta, "En el evento onCreate")
+        val boton1:Button=findViewById(R.id.btn1);
+        boton1.setOnClickListener{
+            Toast.makeText(this, "Click en el boton", Toast.LENGTH_SHORT).show()
+        }
     }
 
    override fun onStart() {
         super.onStart()
         Toast.makeText(this, "En el onStart", Toast.LENGTH_SHORT).show()
+       Log.e(logEtiqueta, "En el evento onStart")
     }
 
     override fun onResume() {
         super.onResume()
         Toast.makeText(this, "En el onResume", Toast.LENGTH_SHORT).show()
+        Log.e(logEtiqueta, "En el evento onResume")
     }
 
     override fun onPause() {
         super.onPause()
         Toast.makeText(this, "En el onPause", Toast.LENGTH_SHORT).show()
+        Log.e(logEtiqueta, "En el evento onPause")
     }
 
     override fun onStop() {
