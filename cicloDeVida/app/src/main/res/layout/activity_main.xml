@@ -7,28 +7,170 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txt_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="293dp"
-        android:text="Button"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_1" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos de Registro"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nombre"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Apellido"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <RadioButton
+        android:id="@+id/otro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otro"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <RadioButton
+        android:id="@+id/masculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <RadioButton
+        android:id="@+id/femenino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Femenino"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:id="@+id/fechaNacimiento"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Fecha de nacimiento"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <Switch
+        android:id="@+id/deporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deporte"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Switch
+        android:id="@+id/trabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trabajo"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <TextView
+        android:id="@+id/textoContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <CheckBox
+        android:id="@+id/aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar terminos y condiciones"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <TextClock
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <CalendarView
+        android:id="@+id/calendario"
+        android:layout_width="189dp"
+        android:layout_height="99dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="496dp" />
+
+    <TextView
+        android:id="@+id/fechaEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de llenado"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <TextView
+        android:id="@+id/horaEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora de llenado"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="496dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
