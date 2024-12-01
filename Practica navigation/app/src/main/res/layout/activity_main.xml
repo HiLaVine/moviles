@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar con 4 íconos -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_icon1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_icon1"
+                android:contentDescription="Icono 1" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_icon2"
+                android:contentDescription="Icono 2" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_icon3"
+                android:contentDescription="Icono 3" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_icon4"
+                android:contentDescription="Icono 4" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scroll Vertical para Noticias -->
+    <ScrollView
+        android:id="@+id/newsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Noticias en TextViews -->
+            <TextView
+                android:id="@+id/news1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gana Trump las elecciones!!"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/news2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anuncian comerdores populares en universidades"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/news3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Windows 10 llegara a su final en menos de un año. ¿Qué se puede hacer?"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/news4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirman fecha de la inaguración de la linea uno del metro"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/news5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arcane se estrena en Netflix con un exito masivo."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El rover Perseverance encuentra indicios de vida microbiana en Marte."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Una nueva película del Universo Marvel se anuncia para 2025."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avances en inteligencia artificial permiten diagnósticos médicos en segundos."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se rompe récord mundial en los 100 metros planos en los Juegos Olímpicos."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NASA confirma el regreso de misiones tripuladas a la Luna en 2024."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Netflix lanza un documental sobre los misterios del océano."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elon Musk presenta prototipo funcional del robot humanoide Tesla Bot."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+            <TextView
+                android:id="@+id/news13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se anuncia un aumento significativo en la inversión en energías renovables."
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
