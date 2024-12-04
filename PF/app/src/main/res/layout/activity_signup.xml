@@ -8,27 +8,30 @@
     tools:context=".SignupActivity">
 
     <!-- Título "Registro" -->
+
+    <!-- Imagen del logo (Avatar) -->
+
     <TextView
         android:id="@+id/signupTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/whisper"
         android:gravity="center"
         android:text="Registro"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/avatarImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <!-- Imagen del logo (Avatar) -->
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/avatarImageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="248dp"
+        android:layout_height="201dp"
         android:layout_marginTop="20dp"
         android:contentDescription="Avatar"
         android:src="@drawable/logo"
@@ -125,12 +128,12 @@
         android:id="@+id/loginTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="¿Ya tienes cuenta? Inicia sesión"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@id/signupButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

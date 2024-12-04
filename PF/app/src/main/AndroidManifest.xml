@@ -22,12 +22,17 @@
 
         <!-- Otras actividades
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".CreateExchangeActivity" />
+
         <activity android:name=".ExchangeDetailsActivity" />
         -->
         <activity android:name=".MainActivity" />
         <activity android:name=".SignupActivity" />
+        <activity android:name=".CreateExchangeActivity" />
+        <activity android:name=".Participate"/>
+        <activity android:name=".Codigoo"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

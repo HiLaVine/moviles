@@ -34,6 +34,11 @@ class LoginActivity : AppCompatActivity() {
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 //loginUser(email, password)
+                // Una vez que el usuario inicia sesión exitosamente
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish() // Opcional, para finalizar la actividad de login y evitar que el usuario regrese al login
+
             } else {
                 Toast.makeText(this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show()
             }
@@ -44,6 +49,8 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 
    /* private fun loginUser(email: String, password: String) {

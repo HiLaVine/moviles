@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/fleur_de_leah</item>
+        <item>@font/water_brush</item>
+        <item>@font/whisper</item>
+        <item>@font/windsong_medium</item>
+        <item>@font/yesteryear</item>
+    </array>
+</resources>
